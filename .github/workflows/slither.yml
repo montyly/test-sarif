@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: trailofbits/slither-analyze-action
+      - uses: trailofbits/slither-analyze-action@master
         with:
           target: 'test.sol'
