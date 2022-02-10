@@ -1,0 +1,8 @@
+name: Slither Analysis
+on: [push]
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: trailofbits/slither-analyze-action
