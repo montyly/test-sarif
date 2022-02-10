@@ -6,6 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: trailofbits/slither-analyze-action@master
+        id: slither
         with:
           target: 'test.sol'
           sarif: results.sarif
